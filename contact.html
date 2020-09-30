@@ -1,0 +1,72 @@
+<!doctype html> 
+<html>
+ <body>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <div>
+   <h3 style="background-color: antiquewhite">Prithviraj Pawar</h3>
+   <a href="\HTML-project\sublime.html">Home</a>
+   <a href="\HTML-project\portfolio.html">Portfolio</a>
+   <a href="\HTML-project\contact.html">Get in touch</a>
+  </div>
+  
+  <div>
+    <script>
+function Contact() {
+  var Name=document.getElementById("Name").value;
+  var Email=document.getElementById("Email").value;
+if (Name) {
+var ContactN1=document.getElementById("ContactN").innerHTML="Name is:"+ Name;
+
+var ContactE1=document.getElementById("ContactE").innerHTML="Email id is:"+ Email;
+}
+else
+   alert("Enter Details");
+    
+}   
+function Options(){
+  var A1=document.getElementById("A1");
+  var A2=document.getElementById("A2");
+  var A3=document.getElementById("A3");
+if (A1.checked) {
+  alert("Is checked "+A1.value);
+  var B1=document.getElementById("B1").innerHTML="Blog";
+}
+ else if  (A2.checked) {
+  var B2=document.getElementById("B2").innerHTML="Company";
+}
+ else if  (A3.checked) {
+  var B3=document.getElementById("B3").innerHTML="Other";
+}
+  else 
+    alert("No Channel Selected");
+}
+</script>
+
+
+   <h4>Get in touch</h4>
+   <input type="text" placeholder="Name" id="Name">
+   <input type="text" placeholder="Email" id="Email">
+   <p>Budget</p>
+   <em>500$</em>
+   <input type="range" placeholder="Budget">
+   <em>5000$+</em>
+   <p>Website type</p>
+   <input type="checkbox" id="A1" value="Blog">
+   <em>Blog</em>
+   <input type="checkbox" id="A2" value="Company">
+   <em>Company</em>
+   <input type="checkbox" id="A3" value="Other">
+   <em>Other</em>
+   <button onclick="Contact()"  id="Bt1">Get a quote</button>
+   <button onclick="Options()"  id="Bt2">Check</button>
+    <h1 id="ContactN"></h1>
+    <h1 id="ContactE"></h1>
+
+    <h2 id="B1"></h2>
+    <h2 id="B2"></h2>
+    <h2 id="B3"></h2>
+  <script href="\javaS.js"></script>
+  </div>
+    </body>
+    
+</html>
