@@ -9,51 +9,14 @@
    <a href="\HTML-project\contact.html">Get in touch</a>
   </div>
   
-  <div>
-    <script>
-function Contact() {
-  var Name=document.getElementById("Name").value;
-  var Email=document.getElementById("Email").value;
-if (Name) {
-var ContactN1=document.getElementById("ContactN").innerHTML="Name is:"+ Name;
-
-var ContactE1=document.getElementById("ContactE").innerHTML="Email id is:"+ Email;
-}
-else
-   alert("Enter Details");
-    
-}   
-function Options(){
-  var A1=document.getElementById("A1");
-  var A2=document.getElementById("A2");
-  var A3=document.getElementById("A3");
-
-if (A3.checked || A2.checked || A1.checked) {
-  if(A3.checked){
-  alert("Others is checked ");
-  var B3=document.getElementById("B3").innerHTML="Other";
-  }
-  if  (A2.checked) {
-  alert("Company is checked"); 
-  var B2=document.getElementById("B2").innerHTML="Company";
-  }
-  if  (A1.checked){ 
-  alert("Blog is checked"); 
-  var B1=document.getElementById("B1").innerHTML="Blog";
- }
-}
-  else 
-    alert("No Channel Selected");
-}
-</script>
-
-
+ <div>
+   
    <h4>Get in touch</h4>
    <input type="text" placeholder="Name" id="Name">
    <input type="text" placeholder="Email" id="Email">
    <p>Budget</p>
    <em>500$</em>
-   <input type="range" placeholder="Budget">
+   <input type="range" min="500" max="5000" value="2750" id="Range" onchange="Range()"  placeholder="Budget">
    <em>5000$+</em>
    <p>Website type</p>
    <input type="checkbox" id="A1" value="Blog">
@@ -61,7 +24,7 @@ if (A3.checked || A2.checked || A1.checked) {
    <input type="checkbox" id="A2" value="Company">
    <em>Company</em>
    <input type="checkbox" id="A3" value="Other">
-   <em>Other</em>
+   <em>Other</em><br><br>
    <button onclick="Contact()"  id="Bt1">Get a quote</button>
    <button onclick="Options()"  id="Bt2">Check</button>
     <h1 id="ContactN"></h1>
@@ -70,8 +33,12 @@ if (A3.checked || A2.checked || A1.checked) {
     <h2 id="B1"></h2>
     <h2 id="B2"></h2>
     <h2 id="B3"></h2>
-  <script href="\javaS.js"></script>
+
+    <p><strong><span id="Display"></span></strong></p>
+
   </div>
+
+  <script src="java.js"></script>
     </body>
     
 </html>
