@@ -21,11 +21,11 @@ if (A3.checked || A2.checked || A1.checked) {
   var B3=document.getElementById("B3").innerHTML="Other";
 }
   if  (A2.checked) {
-    alert("Other is checked ");
+    alert("Company is checked ");
   var B2=document.getElementById("B2").innerHTML="Company";
 }
   if  (A1.checked) {
-    alert("Other is checked ");
+    alert("Blog is checked ");
   var B1=document.getElementById("B1").innerHTML="Blog";
    }
 }
