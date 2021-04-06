@@ -16,17 +16,17 @@ function Options(){
   var A3=document.getElementById("A3");
 
 if (A3.checked || A2.checked || A1.checked) {
- if (A1.checked) {
-   alert("Blog is checked ");
+  if (A1.checked) {
+    alert("Blog is checked ");
   var B1=document.getElementById("B1").innerHTML="Blog";
 }
- Else if  (A2.checked) {
+ else if  (A2.checked) {
     alert("Company is checked ");
   var B2=document.getElementById("B2").innerHTML="Company";
 }
- Else if  (A3.checked) {
-    alert("Others is checked ");
-  var B3=document.getElementById("B3").innerHTML="Other";
+ else if  (A3.checked) {
+    alert("Other is checked ");
+  var B3=document.getElementById("B3").innerHTML="Others";
    }
 }
   else 
