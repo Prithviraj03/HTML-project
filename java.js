@@ -16,7 +16,8 @@ function Options(){
   var A3=document.getElementById("A3");
 
 if (A3.checked || A2.checked || A1.checked) {
- Else if (A1.checked) {
+ E
+ if (A1.checked) {
    alert("Blog is checked ");
   var B1=document.getElementById("B1").innerHTML="Blog";
 }
