@@ -32,13 +32,15 @@ if  (A3.checked) {
   else 
     alert("No Channel Selected");
 }
+slider.oninput = function() {
+	output.innerHTML = "Value: "+this.value;
+	}
+
 function Range() {
 var slider = document.getElementById("Range");
 var output = document.getElementById("Display");
-output.innerHTML = "Value: "+this.value;
+
 output.innerHTML="Value: "+slider.value;
 
-slider.oninput = function() {
-  
-	}
+
 }
