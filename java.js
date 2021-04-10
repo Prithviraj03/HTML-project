@@ -37,10 +37,11 @@ if  (A3.checked) {
 function Range() {
 var slider = document.getElementById("Range");
 var output = document.getElementById("Display");
-
-output.innerHTML="Value: "+slider.value; 
+ 
 	
 slider.oninput = function() {
+
+        output.innerHTML="Value: "+slider.value;
 	output.innerHTML = "Value: "+this.value;
 	}
 
